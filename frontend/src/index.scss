@@ -123,13 +123,18 @@ body {
   box-shadow: 0 4px 15px 0 rgba(197, 238, 14, 0.75);
 }
 
+.btn-hover.color-pink {
+  background-image: linear-gradient(to right, #e125e1, #e93ee0, #e93ee0, #b313e4);
+  box-shadow: 0 4px 15px 0 rgba(255, 0, 170, 0.75);
+}
+
 .btn-hover.color-8 {
   background-image: linear-gradient(to right, #29323c, #33383d, #2b5876, #4e4376);
   box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
 }
 
 .cardbg-color {
-  background-color: #272e3c;
+  background-color: white;
 }
 
 .dark-category {
@@ -219,6 +224,6 @@ body {
 
 @media (max-width: 640px) {
   .marginListSection {
-    margin-top: -26rem;
+    margin-top: -44rem;
   }
 }

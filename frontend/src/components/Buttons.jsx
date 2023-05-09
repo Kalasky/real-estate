@@ -16,3 +16,11 @@ export const GlowOrangePrimary = ({ onClick, children, padding = '', margin = 'a
     </button>
   )
 }
+
+export const GlowPinkPrimary = ({ onClick, children, padding = '', margin = 'auto' }) => {
+  return (
+    <button className={`btn-hover color-pink max-sm:w-full ${margin} ${padding}`} onClick={onClick}>
+      {children}
+    </button>
+  )
+}

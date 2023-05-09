@@ -50,7 +50,7 @@ const NavBar = () => {
               <div className="flex justify-start lg:w-0 flex-1">
                 <Link to="/">
                   <span className="sr-only">Workflow</span>
-                  <div className="text-orange-600 text-2xl" style={{ fontFamily: 'Kalam' }}>
+                  <div className="text-black text-2xl" style={{ fontFamily: 'Kalam' }}>
                     La Jolla Realty
                   </div>
                 </Link>
@@ -63,7 +63,7 @@ const NavBar = () => {
               </Popover.Group>
               <div className="hidden md:flex items-center space-x-10 ml-auto">
                 <GlowGrayPrimary onClick={() => console.log('Clicked!')} padding={'px-4 py-2'}>
-                  <FontAwesomeIcon icon={faStar} className="mr-2 text-orange-500" />
+                  <FontAwesomeIcon icon={faStar} className="mr-2 text-pink-500" />
                   Services
                 </GlowGrayPrimary>
                 <GlowOrangePrimary onClick={() => console.log('Clicked!')} padding={'px-4 py-2'}>
@@ -74,7 +74,7 @@ const NavBar = () => {
                 <Popover.Button
                   className={classNames(
                     open ? 'text-gray-900' : 'text-black',
-                    'rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-orange-500'
+                    'rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-black'
                   )}
                 >
                   <span className="sr-only">Open menu</span>
@@ -117,7 +117,7 @@ const NavBar = () => {
                     <div className="pt-5 pb-6 px-5">
                       <div className="flex items-center justify-between">
                         <div>
-                          <div className="text-orange-600 text-2xl" style={{ fontFamily: 'Kalam' }}>
+                          <div className="text-black text-2xl" style={{ fontFamily: 'Kalam' }}>
                             La Jolla Realty
                           </div>
                         </div>
@@ -125,7 +125,7 @@ const NavBar = () => {
                           <Popover.Button
                             className={classNames(
                               open ? 'text-gray-900' : 'text-black',
-                              'rounded-md p-2 inline-flex items-center justify-center text-gray-300 hover:text-orange-500'
+                              'rounded-md p-2 inline-flex items-center justify-center text-gray-300 hover:text-black'
                             )}
                           >
                             <span className="sr-only">Close menu</span>
@@ -137,7 +137,7 @@ const NavBar = () => {
                         <ul className="mt-3 space-y-4">
                           {about.map((item) => (
                             <li key={item.name} className="text-base truncate">
-                              <Link to={item.href} className="font-medium text-orange-500 hover:text-orange-600">
+                              <Link to={item.href} className="font-medium text-gray-600 hover:text-gray-500">
                                 {item.name}
                               </Link>
                             </li>
@@ -145,11 +145,11 @@ const NavBar = () => {
                         </ul>
                       </div>
                       <div className="mt-6">
-                        <h3 className="text-xs font-semibold text-black uppercase tracking-wide">Product</h3>
+                        <h3 className="text-xs font-bold text-black uppercase tracking-wide">Product</h3>
                         <ul className="mt-3 space-y-4">
                           {product.map((item) => (
                             <li key={item.name} className="text-base truncate">
-                              <Link to={item.href} className="font-medium text-orange-500 hover:text-orange-600">
+                              <Link to={item.href} className="font-medium text-gray-600 hover:text-gray-500">
                                 {item.name}
                               </Link>
                             </li>
@@ -161,11 +161,11 @@ const NavBar = () => {
                       <div className="grid grid-cols-2 gap-y-4 gap-x-8"></div>
                       <div className="mt-6">
                         <nav className="grid gap-y-8">
-                          <h3 className="text-xs font-semibold text-black uppercase tracking-wide">Community</h3>
+                          <h3 className="text-xs font-bold text-black uppercase tracking-wide">Community</h3>
                           {social.map((item) => (
                             <Link key={item.name} to={item.href} className="-m-3 p-3 flex items-center rounded-md">
                               <item.icon className="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true" />
-                              <span className="ml-3 text-base font-medium text-orange-500 hover:text-orange-600">{item.name}</span>
+                              <span className="ml-3 text-base font-medium text-gray-600 hover:text-gray-500">{item.name}</span>
                             </Link>
                           ))}
                         </nav>

@@ -36,7 +36,7 @@ function ProductPopover() {
         onMouseLeave={handleMouseLeave}
         className="inline-block"
       >
-        <button className="rounded-md inline-flex items-center text-base font-medium text-white hover:text-green-500 max-xl:hidden">
+        <button className="rounded-md inline-flex items-center text-base font-medium text-black hover:text-gray-700 max-xl:hidden">
           Product
         </button>
         <div

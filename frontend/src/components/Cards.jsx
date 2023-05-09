@@ -11,11 +11,11 @@ export const ListingCard = ({ title, description, image = '', button }) => {
           <img className="listing-image rounded-t-2xl" src={image} alt="listing image" />
         </div>
       </div>
-      <div className="text-white text-lg font-bold p-10">
+      <div className="text-black text-lg font-bold p-10">
         <div className="text-xl flex">
           <span>{title}</span>
         </div>
-        <p className="mt-6 font-light text-base text-gray-400">{description}</p>
+        <p className="mt-6 font-light text-base text-black">{description}</p>
         <div className="mt-6">{button}</div>
       </div>
     </div>
@@ -53,4 +53,87 @@ export const FeatureCard = ({ title, IconComponent, iconColor, description }) =>
       <p className="mt-6 font-light text-base text-gray-400">{description}</p>
     </div>
   </div>
+)
+
+export const ListingCards = () => (
+  <>
+    <ListingCard
+      title="La Jolla Shores"
+      description="La Jolla Shores is a beach and popular vacation/residential Laureate Park,on Avenida de la Playa in the villa"
+      image={listing204}
+      button={<GlowPinkPrimary onClick={() => {}} children="View Listing" padding={'px-10 py-2'} />}
+    />
+    <ListingCard
+      title="La Jolla Shores"
+      description="La Jolla Shores is a beach and popular vacation/residential Laureate Park,on Avenida de la Playa in the villa"
+      image={listing206}
+      button={<GlowPinkPrimary onClick={() => {}} children="View Listing" padding={'px-10 py-2'} />}
+    />
+    <ListingCard
+      title="La Jolla Shores"
+      description="La Jolla Shores is a beach and popular vacation/residential Laureate Park,on Avenida de la Playa in the villa"
+      image={listing248}
+      button={<GlowPinkPrimary onClick={() => {}} children="View Listing" padding={'px-10 py-2'} />}
+    />
+    <ListingCard
+      title="La Jolla Shores"
+      description="La Jolla Shores is a beach and popular vacation/residential Laureate Park,on Avenida de la Playa in the villa"
+      image={listing271}
+      button={<GlowPinkPrimary onClick={() => {}} children="View Listing" padding={'px-10 py-2'} />}
+    />
+    <ListingCard
+      title="La Jolla Shores"
+      description="La Jolla Shores is a beach and popular vacation/residential Laureate Park,on Avenida de la Playa in the villa"
+      image={listing279}
+      button={<GlowPinkPrimary onClick={() => {}} children="View Listing" padding={'px-10 py-2'} />}
+    />
+    <ListingCard
+      title="La Jolla Shores"
+      description="La Jolla Shores is a beach and popular vacation/residential Laureate Park,on Avenida de la Playa in the villa"
+      image={listing401}
+      button={<GlowPinkPrimary onClick={() => {}} children="View Listing" padding={'px-10 py-2'} />}
+    />
+    <ListingCard
+      title="La Jolla Shores"
+      description="La Jolla Shores is a beach and popular vacation/residential Laureate Park,on Avenida de la Playa in the villa"
+      image={listing441}
+      button={<GlowPinkPrimary onClick={() => {}} children="View Listing" padding={'px-10 py-2'} />}
+    />
+    <ListingCard
+      title="La Jolla Shores"
+      description="La Jolla Shores is a beach and popular vacation/residential Laureate Park,on Avenida de la Playa in the villa"
+      image={listing443}
+      button={<GlowPinkPrimary onClick={() => {}} children="View Listing" padding={'px-10 py-2'} />}
+    />
+    <ListingCard
+      title="La Jolla Shores"
+      description="La Jolla Shores is a beach and popular vacation/residential Laureate Park,on Avenida de la Playa in the villa"
+      image={listing473}
+      button={<GlowPinkPrimary onClick={() => {}} children="View Listing" padding={'px-10 py-2'} />}
+    />
+    <ListingCard
+      title="La Jolla Shores"
+      description="La Jolla Shores is a beach and popular vacation/residential Laureate Park,on Avenida de la Playa in the villa"
+      image={listing476}
+      button={<GlowPinkPrimary onClick={() => {}} children="View Listing" padding={'px-10 py-2'} />}
+    />
+    <ListingCard
+      title="La Jolla Shores"
+      description="La Jolla Shores is a beach and popular vacation/residential Laureate Park,on Avenida de la Playa in the villa"
+      image={listing477}
+      button={<GlowPinkPrimary onClick={() => {}} children="View Listing" padding={'px-10 py-2'} />}
+    />
+    <ListingCard
+      title="La Jolla Shores"
+      description="La Jolla Shores is a beach and popular vacation/residential Laureate Park,on Avenida de la Playa in the villa"
+      image={listing204}
+      button={<GlowPinkPrimary onClick={() => {}} children="View Listing" padding={'px-10 py-2'} />}
+    />
+    <ListingCard
+      title="La Jolla Shores"
+      description="La Jolla Shores is a beach and popular vacation/residential Laureate Park,on Avenida de la Playa in the villa"
+      image={listing204}
+      button={<GlowPinkPrimary onClick={() => {}} children="View Listing" padding={'px-10 py-2'} />}
+    />
+  </>
 )
