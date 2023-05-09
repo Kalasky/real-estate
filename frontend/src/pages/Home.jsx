@@ -15,11 +15,11 @@ import paseo401 from '../assets/paseo401.webp'
 import paseo206 from '../assets/paseo206.webp'
 import mariola from '../assets/mariola.webp'
 import lajolla from '../assets/lajolla.webp'
-import hero from '../assets/hero.svg'
+import herotravel from '../assets/herotravel.svg'
+import fullcircle from '../assets/fullcircle.svg'
 
 // components
 import { GlowGrayPrimary, GlowOrangePrimary } from '../components/Buttons'
-import Navbar from '../components/Navbar'
 
 const Home = () => {
   const [isCopied, setIsCopied] = useState(false)
@@ -28,15 +28,14 @@ const Home = () => {
   const handleClick = () => {
     navigator.clipboard.writeText(phoneNumber)
     setIsCopied(true)
-    setTimeout(() => setIsCopied(false), 2000) // reset "copied" message after 2 seconds
+    setTimeout(() => setIsCopied(false), 2000)
   }
 
   return (
     <div>
       <section className="hero-background">
-        <Navbar />
-        <div className="hero-height container mx-auto sm:pt-14 max-sm:pt-14" style={{ fontFamily: 'Poppins' }}>
-          <div className="grid grid-flow-row-dense xl:grid-cols-3 sm:grid-cols-1">
+        <div className="hero-height container mx-auto md:pt-32 max-sm:pt-0" style={{ fontFamily: 'Poppins' }}>
+          <div className="grid max-md:block grid-flow-row-dense xl:grid-cols-3 sm:grid-cols-1">
             <div id="text-section" className="col-span-1" style={{ marginTop: '5.0625rem' }}>
               <p className="font-bold xl:text-6xl md:text-5xl max-sm:text-4xl max-lg:text-4xl lg:w-11/12 bg-gradient-to-r from-orange-600 to-orange-300 inline-block text-transparent bg-clip-text">
                 La Jolla Shores Real Estate Sales and Rental Expert
@@ -56,16 +55,17 @@ const Home = () => {
               </div>
             </div>
             <img
-              src={hero}
+              src={herotravel}
               alt="surreal"
               className="relative max-xl:hidden"
-              style={{ maxWidth: '70rem', right: '21rem', top: '-10rem' }}
+              style={{ maxWidth: '70rem', right: '14rem', top: '-13rem' }}
             />
+            <img src={fullcircle} alt="surreal" className="relative xl:hidden fullcircle" />
           </div>
         </div>
       </section>
       <section className="globalbg">
-        <div className="container mx-auto max-sm:pt-14 pb-12" style={{ fontFamily: 'Poppins' }}>
+        <div className="container mx-auto max-sm:pt-14 pb-12 marginListSection" style={{ fontFamily: 'Poppins' }}>
           <div className="mt-10 text-base space-y-5">
             <p
               className="mt-14 max-sm:mt-0 font-bold xl:text-6xl md:text-5xl max-sm:text-4xl max-lg:text-4xl lg:w-11/12 bg-gradient-to-r from-orange-600 to-orange-300 inline-block text-transparent bg-clip-text text-center"

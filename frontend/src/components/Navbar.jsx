@@ -42,10 +42,10 @@ const NavBar = () => {
   }, [])
 
   return (
-    <Popover className={`relative ${isSticky ? 'max-md:sticky top-0 z-50 glass-overlay sm:bg-transparent' : 'bg-transparent'}`}>
+    <Popover className={`relative z-10 ${isSticky ? 'max-md:sticky top-0 z-50 glass-overlay sm:bg-transparent' : 'bg-transparent'}`}>
       {({ open }) => (
         <>
-          <div className="container mx-auto sm:py-8">
+          <div className="container mx-auto sm:py-8 md:absolute max-md:relative left-0 right-0">
             <div className="flex max-md:justify-between items-center border-b-2 border-none py-6 md:space-x-10">
               <div className="flex justify-start lg:w-0 flex-1">
                 <Link to="/">
@@ -113,7 +113,7 @@ const NavBar = () => {
                     isSticky ? 'glass-overlay' : 'bg-transparent'
                   }`}
                 >
-                  <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 globalbg divide-y-2 divide-gray-700">
+                  <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 globalbg divide-y-2 divide-gray-200">
                     <div className="pt-5 pb-6 px-5">
                       <div className="flex items-center justify-between">
                         <div>

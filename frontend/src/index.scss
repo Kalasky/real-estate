@@ -7,7 +7,7 @@ body {
 }
 
 .hero-background {
-  background-color: white;
+  background-color: transparent;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -175,5 +175,50 @@ body {
   .sticky-small-screen {
     position: -webkit-sticky;
     position: sticky;
+  }
+}
+
+@media (max-width: 1280px) {
+  .fullcircle {
+    max-width: 44rem;
+    left: 34rem;
+    top: -45rem;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .fullcircle {
+    max-width: 44rem;
+    left: 28rem;
+    top: -45rem;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .fullcircle {
+    max-width: 44rem;
+    left: 15rem;
+    top: -45rem;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 1280px) {
+  .marginListSection {
+    margin-top: -27rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .marginListSection {
+    margin-top: -45rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .marginListSection {
+    margin-top: -26rem;
   }
 }
