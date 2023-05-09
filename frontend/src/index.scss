@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  --tw-bg-opacity: 1;
+}
+
+.hero-background {
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  // padding-top: 24px;
+  overflow: hidden;
+}
+
+// .hero-background::before {
+//   content: '';
+//   position: absolute;
+//   width: 100%;
+//   height: 10%;
+//   bottom: 0;
+//   background-image: linear-gradient(0deg, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0) 100%);
+//   z-index: 1;
+// }
+
+.listings-background {
+  background-image: linear-gradient(rgba(32, 32, 32, 0.5), rgba(43, 43, 43, 0.5)), url('./assets/listingshero.webp');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 24px;
+  overflow: hidden;
+}
+
+.listings-background::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  bottom: 0;
+  background-image: linear-gradient(0deg, rgb(26, 32, 45) 30%, rgba(26, 32, 45, 0) 100%);
+  z-index: 1;
+}
+
+.friends-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/friends.webp');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 24px;
+  overflow: hidden;
+}
+
+.friends-background::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  bottom: 0;
+  background-image: linear-gradient(0deg, rgb(26, 32, 45) 30%, rgba(26, 32, 45, 0) 100%);
+  z-index: 1;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.globalbg {
+  --tw-bg-opacity: 1;
+  background-color: white;
+}
+
+@media (min-width: 1280px) {
+  .navxl {
+    display: block !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .mlauto {
+    margin-left: auto;
+  }
+}
+
+#text-section {
+  grid-column: 1 / span 2;
+}
+
+.btn-hover {
+  width: auto;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color-1 {
+  background-image: linear-gradient(to right, #e18925, #c76a00, #ee7b0f, #e4cf16);
+  box-shadow: 0 4px 15px 0 rgba(197, 238, 14, 0.75);
+}
+
+.btn-hover.color-8 {
+  background-image: linear-gradient(to right, #29323c, #33383d, #2b5876, #4e4376);
+  box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+
+.cardbg-color {
+  background-color: #272e3c;
+}
+
+.dark-category {
+  background-color: rgb(26, 32, 45);
+}
+
+.glass-overlay {
+  backdrop-filter: blur(10px);
+  background-color: transparent;
+}
+
+.card-hover:hover .icon-to-change-color {
+  color: #01ed64;
+}
+
+.hero-height {
+  height: 100%;
+}
+
+@media (max-width: 576px) {
+  .hero-height {
+    height: 65rem;
+  }
+}
+
+.listing-image-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.listing-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: 640px) {
+  .sticky-small-screen {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
