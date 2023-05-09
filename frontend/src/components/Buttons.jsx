@@ -24,3 +24,11 @@ export const GlowPinkPrimary = ({ onClick, children, padding = '', margin = 'aut
     </button>
   )
 }
+
+export const GlowDarkerPrimary = ({ onClick, children, padding = '', margin = 'auto' }) => {
+  return (
+    <button className={`btn-hover color-darker max-sm:w-full ${margin} ${padding}`} onClick={onClick}>
+      {children}
+    </button>
+  )
+}

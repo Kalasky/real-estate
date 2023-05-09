@@ -146,7 +146,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="pb-36" style={{ backgroundColor: 'rgb(246,246,246)' }}>
+      <section className="pb-36">
         <div className="container mx-auto sm:pt-28 max-sm:pt-14 pb-12" style={{ fontFamily: 'Poppins', height: '55rem' }}>
           <div className="grid grid-flow-row-dense xl:grid-cols-3 sm:grid-cols-1">
             <div id="text-section" className="col-span-1" style={{ marginTop: '5.0625rem' }}>

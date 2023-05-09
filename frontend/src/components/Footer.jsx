@@ -20,34 +20,32 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="dark-category flex-grow border-t border-gray-700">
+    <footer className="dark-category flex-grow border-t">
       <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-1">
           <div>
-            <div className="text-white text-2xl" style={{ fontFamily: 'Kalam' }}>
+            <div className="text-black text-2xl" style={{ fontFamily: 'Kalam' }}>
               La Jolla Realty
             </div>
 
-            <p className="max-w-full mt-4 text-sm text-white">
-              With an SQL-style query language, real-time queries with highly-efficient related data retrieval, advanced security
-              permissions for multi-tenant access, and support for performant analytical workloads, SurrealDB is the next
-              generation serverless database.
+            <p className="max-w-full mt-4 text-sm text-black">
+              Please contact Mariola for more information on listings' availability
             </p>
             <p className="space-x-4 text-3xl mt-6">
-              <FontAwesomeIcon icon={faGithub} className="text-gray-400" />
-              <FontAwesomeIcon icon={faTwitter} className="text-gray-400" />
-              <FontAwesomeIcon icon={faYoutube} className="text-gray-400" />
-              <FontAwesomeIcon icon={faStackOverflow} className="text-gray-400" />
-              <FontAwesomeIcon icon={faDiscord} className="text-gray-400" />
-              <FontAwesomeIcon icon={faRedditAlien} className="text-gray-400" />
-              <FontAwesomeIcon icon={faLinkedin} className="text-gray-400" />
+              <FontAwesomeIcon icon={faGithub} className="text-gray-600" />
+              <FontAwesomeIcon icon={faTwitter} className="text-gray-600" />
+              <FontAwesomeIcon icon={faYoutube} className="text-gray-600" />
+              <FontAwesomeIcon icon={faStackOverflow} className="text-gray-600" />
+              <FontAwesomeIcon icon={faDiscord} className="text-gray-600" />
+              <FontAwesomeIcon icon={faRedditAlien} className="text-gray-600" />
+              <FontAwesomeIcon icon={faLinkedin} className="text-gray-600" />
             </p>
             <div className="border-t border-gray-700 mt-10"></div>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4">
             <div>
-              <p className="font-semibold text-white">COMMUNITY</p>
-              <nav className="flex flex-col mt-4 space-y-2 text-base text-gray-400 leading-9">
+              <p className="font-semibold text-black">COMMUNITY</p>
+              <nav className="flex flex-col mt-4 space-y-2 text-base text-gray-800 leading-9">
                 {social.map((item) => {
                   return (
                     <a key={item.name} className="hover:opacity-75" href={item.href}>
@@ -61,8 +59,8 @@ const Footer = () => {
               </nav>
             </div>
             <div>
-              <p className="font-semibold text-white">PRODUCT</p>
-              <nav className="flex flex-col mt-4 space-y-2 text-base text-gray-400 leading-9">
+              <p className="font-semibold text-black">PRODUCT</p>
+              <nav className="flex flex-col mt-4 space-y-2 text-base text-gray-800 leading-9">
                 {product.map((item) => {
                   return (
                     <a key={item.name} className="hover:opacity-75" href={item.href}>
@@ -73,8 +71,8 @@ const Footer = () => {
               </nav>
             </div>
             <div>
-              <p className="font-semibold text-white max-md:mt-12">LEGAL</p>
-              <nav className="flex flex-col mt-4 space-y-2 text-base text-gray-400 leading-9">
+              <p className="font-semibold text-black max-md:mt-12">LEGAL</p>
+              <nav className="flex flex-col mt-4 space-y-2 text-base text-gray-800 leading-9">
                 {legal.map((item) => {
                   return (
                     <a key={item.name} className="hover:opacity-75" href={item.href}>
@@ -85,8 +83,8 @@ const Footer = () => {
               </nav>
             </div>
             <div>
-              <p className="font-semibold text-white max-md:mt-12">ABOUT</p>
-              <nav className="flex flex-col mt-4 space-y-2 text-base text-gray-400 leading-9">
+              <p className="font-semibold text-black max-md:mt-12">ABOUT</p>
+              <nav className="flex flex-col mt-4 space-y-2 text-base text-gray-800 leading-9">
                 {about.map((item) => {
                   return (
                     <a key={item.name} className="hover:opacity-75" href={item.href}>
@@ -99,8 +97,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-gray-700 mt-10"></div>
-        <div className="text-white text-2xl mt-10" style={{ fontFamily: 'Kalam' }}>
-          La Jolla Realty
+        <div className="text-black text-base mt-10">
+          Copyright © 2023 La Jolla Real Estate Sales and Rental - All Rights Reserved.
         </div>
       </div>
     </footer>

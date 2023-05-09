@@ -54,17 +54,17 @@ function ProductPopover() {
                 description={item.description}
                 icon={item.icon}
                 href={item.href}
-                iconColor={'text-white'}
+                iconColor={'text-black'}
               />
             ))}
           </div>
-          <div className="bg-slate-800 text-white text-lg font-bold p-4 rounded-b-2xl mt-6">
+          <div className="bg-slate-800 text-black text-lg font-bold p-4 rounded-b-2xl mt-6">
             <div className="text-sm grid grid-cols-4 xl:col-span-4 gap-y-4 gap-x-4">
               {social.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
-                  className="font-medium text-white hover:text-green-500 duration-200 mt-3 flex items-center"
+                  className="font-medium text-white hover:text-gray-300 duration-200 mt-3 flex items-center"
                 >
                   <FontAwesomeIcon icon={item.icon} className="h-5" /> <span className="ml-3">{item.name}</span>
                 </Link>

@@ -16,7 +16,7 @@ import { product, social, about } from '../data/navbarLists'
 
 // components
 import NavLink from './NavLink'
-import { GlowOrangePrimary, GlowGrayPrimary } from './Buttons'
+import { GlowGrayPrimary } from './Buttons'
 import ProductPopover from './ProductPopover'
 
 function classNames(...classes) {
@@ -63,12 +63,13 @@ const NavBar = () => {
               </Popover.Group>
               <div className="hidden md:flex items-center space-x-10 ml-auto">
                 <GlowGrayPrimary onClick={() => console.log('Clicked!')} padding={'px-4 py-2'}>
-                  <FontAwesomeIcon icon={faStar} className="mr-2 text-pink-500" />
                   Services
                 </GlowGrayPrimary>
-                <GlowOrangePrimary onClick={() => console.log('Clicked!')} padding={'px-4 py-2'}>
+                <GlowGrayPrimary onClick={() => console.log('Clicked!')} padding={'px-4 py-2'}>
+                <FontAwesomeIcon icon={faStar} className="mr-2 text-pink-400" />
+
                   Contact Us
-                </GlowOrangePrimary>
+                </GlowGrayPrimary>
               </div>
               <div className="flex xl:hidden items-center ml-4">
                 <Popover.Button

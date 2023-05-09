@@ -33,10 +33,10 @@ export const PopoverCard = ({ title, icon, iconColor, description, href }) => {
       >
         <div className="text-gray-400 text-sm p-4">
           <FontAwesomeIcon icon={icon} size="1x" className={`mr-2 ${iconColor} icon-to-change-color`} />
-          <span className="text-white">{title}</span>
+          <span className="text-black icon-to-change-color">{title}</span>
         </div>
         <div className="text-lg font-bold p-4 pt-0 flex-grow w-64">
-          <p className="font-normal text-xs text-gray-400 leading-6">{description}</p>
+          <p className="font-normal text-xs text-gray-500 leading-6">{description}</p>
         </div>
       </div>
     </Link>

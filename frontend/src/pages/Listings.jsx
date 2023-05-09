@@ -42,6 +42,11 @@ const Listings = () => {
               <p className="mt-5 sm:text-3xl max-sm:text-2xl text-black text font-bold">
                 Let's start with the basics-gentle waves, a mile of sand, a park, restaurants, shops.
               </p>
+              <p className="text-gray-800 text-lg mt-5 lg:w-11/12">
+                Explore our curated collection of property listings in La Jolla and find your next home in this charming coastal
+                community. With beautiful beaches, picturesque landscapes, and a lively community, La Jolla is the perfect place
+                to call home. Browse our listings today and find your perfect match.
+              </p>
               <div className="mt-10 mb-20 text-base space-y-5">
                 <GlowPinkPrimary onClick={() => {}} children="Services" padding={'px-4 py-3'} />
                 <GlowPinkPrimary onClick={() => {}} children="Listings" padding={'px-4 py-3'} margin="sm:m-8" />
@@ -66,7 +71,7 @@ const Listings = () => {
             Rental Listings
           </p>
 
-          <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6" id='listingtop'>
+          <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6" id="listingtop">
             {currentListings.map((listing, index) => (
               <ListingCard
                 key={index}
