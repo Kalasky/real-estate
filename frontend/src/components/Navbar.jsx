@@ -8,16 +8,12 @@ import '../index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 
-// assets
-import mongologo from '../assets/mongologo.svg'
-
 // data
 import { product, social, about } from '../data/navbarLists'
 
 // components
 import NavLink from './NavLink'
 import { GlowGrayPrimary } from './Buttons'
-import ProductPopover from './ProductPopover'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -42,7 +38,9 @@ const NavBar = () => {
   }, [])
 
   return (
-    <Popover className={`relative z-10 ${isSticky ? 'max-md:sticky top-0 z-50 glass-overlay sm:bg-transparent' : 'bg-transparent'}`}>
+    <Popover
+      className={`relative z-10 ${isSticky ? 'max-md:sticky top-0 z-50 glass-overlay sm:bg-transparent' : 'bg-transparent'}`}
+    >
       {({ open }) => (
         <>
           <div className="container mx-auto sm:py-8 md:absolute max-md:relative left-0 right-0">
@@ -59,17 +57,19 @@ const NavBar = () => {
                 <NavLink href="/" text="Home" />
                 <NavLink href="/listings" text="Listings" />
                 <NavLink href="/friends" text="Friends" />
-                <ProductPopover />
               </Popover.Group>
               <div className="hidden md:flex items-center space-x-10 ml-auto">
-                <GlowGrayPrimary onClick={() => console.log('Clicked!')} padding={'px-4 py-2'}>
-                  Services
-                </GlowGrayPrimary>
-                <GlowGrayPrimary onClick={() => console.log('Clicked!')} padding={'px-4 py-2'}>
-                <FontAwesomeIcon icon={faStar} className="mr-2 text-pink-400" />
-
-                  Contact Us
-                </GlowGrayPrimary>
+                {/* <Link to="/services">
+                  <GlowGrayPrimary padding={'px-4 py-2'}>Services</GlowGrayPrimary>
+                </Link> */}
+                <Link to="/contact">
+                  <GlowGrayPrimary padding={'px-4 py-2'}>
+                    <Link to="/contact">
+                    <FontAwesomeIcon icon={faStar} className="mr-2 text-pink-400" />
+                    </Link>
+                    Contact Us
+                  </GlowGrayPrimary>
+                </Link>
               </div>
               <div className="flex xl:hidden items-center ml-4">
                 <Popover.Button

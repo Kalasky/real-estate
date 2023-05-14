@@ -3,9 +3,6 @@ import React from 'react'
 // data
 import { social, product, legal, about } from '../data/footerLists'
 
-// assets
-import mongologo from '../assets/mongoFullLogo.svg'
-
 // fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -29,7 +26,7 @@ const Footer = () => {
             </div>
 
             <p className="max-w-full mt-4 text-sm text-black">
-              Please contact Mariola for more information on listings' availability
+              Please contact Mariola for more information for listing availability
             </p>
             <p className="space-x-4 text-3xl mt-6">
               <FontAwesomeIcon icon={faGithub} className="text-gray-600" />

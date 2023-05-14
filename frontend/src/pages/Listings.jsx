@@ -10,8 +10,7 @@ import Pagination from '../components/Pagination'
 import listings from '../data/listings'
 
 // assets
-
-import listingcircle from '../assets/listingcircle.svg'
+import listing_circle from '../assets/listing_circle.svg'
 import listingcirclenolabels from '../assets/listingcirclenolabels.svg'
 
 const Listings = () => {
@@ -53,10 +52,10 @@ const Listings = () => {
               </div>
             </div>
             <img
-              src={listingcircle}
+              src={listing_circle}
               alt="surreal"
-              className="relative max-xl:hidden"
-              style={{ maxWidth: '70rem', right: '14rem', top: '-13rem' }}
+              className="relative max-xl:hidden h-3/4"
+              style={{ maxWidth: '70rem', right: '6rem', top: '-13rem', height: '80%' }}
             />
             <img src={listingcirclenolabels} alt="surreal" className="relative xl:hidden fullcircle" />
           </div>

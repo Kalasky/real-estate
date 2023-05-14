@@ -58,7 +58,7 @@ const Home = () => {
               src={herotravel}
               alt="surreal"
               className="relative max-xl:hidden"
-              style={{ maxWidth: '70rem', right: '14rem', top: '-13rem' }}
+              style={{ maxWidth: '70rem', right: '6rem', top: '-13rem', height: '80%' }}
             />
             <img src={fullcircle} alt="surreal" className="relative xl:hidden fullcircle" />
           </div>

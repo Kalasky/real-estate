@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Pagination = ({ pageCount, currentPage, onPageChange, marginPagesDisplayed = 2, pageRangeDisplayed = 5 }) => {
+const Pagination = ({ pageCount, currentPage, onPageChange, pageRangeDisplayed = 5 }) => {
   const handlePageClick = (pageNumber) => {
     onPageChange(pageNumber)
     const listingsTop = document.getElementById('listingtop')
